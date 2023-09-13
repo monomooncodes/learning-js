@@ -17,10 +17,35 @@ console.log(p);
   console.log(shi);
 
   //unishift(); add one more elemet to the begining to an array and return new length
+  const a = ['1', '2', '3'];
+// Adding elements to the beginning of the array
+a.unshift('4', '5');
+console.log(a); // output:[4,5,1,2,3]
 
-  var unshi = [1 ,2,3,4,5]
-  var unshiftElement = unshi.shift(unshi);
-  console.log(unshi);
+//slice(): This method returns a shallow copy of a portion of an array into a new array. You can specify the start and end indices to slice
 
-  
+const numbers = [1, 2, 3, 4, 5];
+// Slicing a portion of the array
+const slicedArray = numbers.slice(1, 4);
+console.log(slicedArray); // Output: [2, 3, 4]
+
+//splice(): This method changes the contents of an array by removing, replacing, or adding elements. It can be used for various purposes.
+
+  const colors = ['red', 'green', 'blue'];
+
+// Removing elements (starting at index 1, remove 1 element)
+colors.splice(1, 1);
+
+console.log(colors); // Output: ['red', 'blue']
+
+// Adding elements (starting at index 1, add 'yellow' and 'purple')
+colors.splice(1, 0, 'yellow', 'purple');
+
+console.log(colors); // Output: ['red', 'yellow', 'purple', 'blue']
+
+// Replacing elements (replace 'purple' with 'violet')
+colors.splice(2, 1, 'violet');
+
+console.log(colors); // Output: ['red', 'yellow', 'violet', 'blue']
+
 
