@@ -1,7 +1,7 @@
 // function: functions are blocks of code that can be define and exectued to perform a specific task. 
 
 let  num = function(){
-    console.log("i am a coder");
+    console.log("i am a coder"):
 }
 num()
 
