@@ -32,20 +32,15 @@ console.log(slicedArray); // Output: [2, 3, 4]
 //splice(): This method changes the contents of an array by removing, replacing, or adding elements. It can be used for various purposes.
 
   const colors = ['red', 'green', 'blue'];
-
 // Removing elements (starting at index 1, remove 1 element)
 colors.splice(1, 1);
-
 console.log(colors); // Output: ['red', 'blue']
 
 // Adding elements (starting at index 1, add 'yellow' and 'purple')
 colors.splice(1, 0, 'yellow', 'purple');
-
 console.log(colors); // Output: ['red', 'yellow', 'purple', 'blue']
-
 // Replacing elements (replace 'purple' with 'violet')
 colors.splice(2, 1, 'violet');
-
 console.log(colors); // Output: ['red', 'yellow', 'violet', 'blue']
 
 
