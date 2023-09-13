@@ -24,16 +24,22 @@ console.log(a); // output:[4,5,1,2,3]
 
 //slice(): This method returns a shallow copy of a portion of an array into a new array. You can specify the start and end indices to slice
 
-const numbers = [1, 2, 3, 4, 5];
-// Slicing a portion of the array
-const slicedArray = numbers.slice(1, 4);
-console.log(slicedArray); // Output: [2, 3, 4]
+let  number = ["apple", "ball", "cat", "dog"];
+// Slicing a porting of the array
+let snumber =  number.slice(1, 2);
+console.log(snumber);
+
+
+let food = ["pizza", "burger", "pasta"]
+let sfood = food.slice(1,2)
+console.log(sfood);
+
 
 //splice(): This method changes the contents of an array by removing, replacing, or adding elements. It can be used for various purposes.
 
   const colors = ['red', 'green', 'blue'];
 // Removing elements (starting at index 1, remove 1 element)
-colors.splice(1, 1);
+const scolors = colors.splice(1, 2, );
 console.log(colors); // Output: ['red', 'blue']
 
 // Adding elements (starting at index 1, add 'yellow' and 'purple')
@@ -42,5 +48,3 @@ console.log(colors); // Output: ['red', 'yellow', 'purple', 'blue']
 // Replacing elements (replace 'purple' with 'violet')
 colors.splice(2, 1, 'violet');
 console.log(colors); // Output: ['red', 'yellow', 'violet', 'blue']
-
-
