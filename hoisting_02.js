@@ -1,13 +1,22 @@
-// hoisting is the default behaviour of javascript. It basicially is something which helps us change the sequence of code. There are two types of Hoisting :  variable hoisting and function hoisting 
-console.log(name) 
-var name = "Some_name"
+// hoisting in js is a defult behaviours of moving declatration.A  variable can be used before it has been declared  in hoisting.
+//Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+//there are two type of hoisting; variable hoisting, function hoisting.
 
-//this is variable hoisting 
-// if we see output of this , we will see it is undefined because the variable name output : name , has been printed first then the variable name has been declared 
+//variable hoisting
+//Variable hosting can be done with var. if we use let the result will be;ReferenceError and while sing const while hoisting the result will be;syntax error
+//When you declare a variable using var, it gets hoisted to the top of its containing function or global scope.
 
-some();
-function some(){
-  console.log("Haha I can be hoisted ")
+console.log(x); // output:undefined
+
+var x = "Education";
+
+console.log(x); //output: education
+
+//functional hoisting 
+//In functional hoisting we can call function before it appears in the code.
+
+ane(); // This works because the function is hoisted.(calling function)
+
+function ane() {
+  console.log("Hello, world!");
 }
-
-// here this code will be run as it is functional hoisting 
